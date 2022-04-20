@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using check_check.Database;
 
 namespace check_check
 {
@@ -20,6 +21,7 @@ namespace check_check
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly MySQLManager mySQLManager = new MySQLManager();
         public MainWindow()
         {
             InitializeComponent();
